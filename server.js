@@ -18,3 +18,8 @@ app.get( '/', function( req, res ){
   res.sendFile( path.resolve( 'views/index.html' ) );
 }); // end base url
 
+app.get('/jen', function (req, res) {
+  // this is the root url
+  console.log('request for Jen received');
+  res.send('jen request');
+  });
